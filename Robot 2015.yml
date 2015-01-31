@@ -127,7 +127,7 @@ Children:
       Name: Robot Drive 4 1
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: None}
+        name: Default Command, type: Command, validators: null, value: mechaum drive}
     Base: Subsystem
     Name: Drive Train
   - Children:
@@ -407,23 +407,13 @@ Children:
       Name: button 1
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
-        choices: &id012 ['0', '1', '2', '3', '4', '5']
+        choices: ['0', '1', '2', '3', '4', '5']
         default: 1
         name: Number
-        validators: &id013 [Joystick]
+        validators: [Joystick]
         value: '0'
     Base: Joystick
     Name: Joystick 1
-  - Children: []
-    Properties:
-      Number: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id012
-        default: 1
-        name: Number
-        validators: *id013
-        value: '1'
-    Base: Joystick
-    Name: rotate stick
   Properties: {}
   Base: OI
   Name: Operator Interface
@@ -653,6 +643,6 @@ Properties:
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-    name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
+    name: Autonomous Command, type: Command, validators: null, value: automous}
 Base: Robot
 Name: Robot_2015
