@@ -31,11 +31,9 @@ public class RobotMap {
     public static SpeedController driveTrainbackrighoutput4;
     public static SpeedController driveTrainbackleftoutput5;
     public static RobotDrive driveTrainRobotDrive41;
-    public static Compressor grabCompressor1;
-    public static DoubleSolenoid grabDoubleSolenoid1;
-    public static DoubleSolenoid grabDoubleSolenoid2;
-    public static DoubleSolenoid grabDoubleSolenoid3;
-    public static DoubleSolenoid grabDoubleSolenoid4;
+    public static Compressor grabCompressor;
+    public static DoubleSolenoid grabRightSolenoid;
+    public static DoubleSolenoid grableftSolenoid;
     public static SpeedController liftSpeedController1;
     public static SpeedController liftSpeedController2;
     public static AnalogPotentiometer liftAnalogPotentiometer1;
@@ -68,20 +66,14 @@ public class RobotMap {
         driveTrainRobotDrive41.setSensitivity(0.5);
         driveTrainRobotDrive41.setMaxOutput(1.0);
 
-        grabCompressor1 = new Compressor(0);
+        grabCompressor = new Compressor(0);
         
         
-        grabDoubleSolenoid1 = new DoubleSolenoid(0, 0, 1);      
-        LiveWindow.addActuator("grab", "Double Solenoid 1", grabDoubleSolenoid1);
+        grabRightSolenoid = new DoubleSolenoid(0, 0, 1);      
+        LiveWindow.addActuator("grab", "Right Solenoid", grabRightSolenoid);
         
-        grabDoubleSolenoid2 = new DoubleSolenoid(0, 2, 3);      
-        LiveWindow.addActuator("grab", "Double Solenoid 2", grabDoubleSolenoid2);
-        
-        grabDoubleSolenoid3 = new DoubleSolenoid(0, 4, 5);      
-        LiveWindow.addActuator("grab", "Double Solenoid 3", grabDoubleSolenoid3);
-        
-        grabDoubleSolenoid4 = new DoubleSolenoid(0, 6, 7);      
-        LiveWindow.addActuator("grab", "Double Solenoid 4", grabDoubleSolenoid4);
+        grableftSolenoid = new DoubleSolenoid(1, 2, 3);      
+        LiveWindow.addActuator("grab", "left Solenoid", grableftSolenoid);
         
         liftSpeedController1 = new Talon(1);
         LiveWindow.addActuator("Lift", "Speed Controller 1", (Talon) liftSpeedController1);
