@@ -53,5 +53,8 @@ public class DriveTrain extends Subsystem {
     	
     	
     }
+    public void resetGyro (){
+    	gyro1.reset();
+    }
 }
 

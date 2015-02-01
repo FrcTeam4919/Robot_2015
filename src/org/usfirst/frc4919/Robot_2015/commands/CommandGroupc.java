@@ -19,8 +19,9 @@ public class CommandGroupc extends CommandGroup {
     
     public  CommandGroupc() {
         // Add Commands here:
-        // e.g. addSequential(new Command1());
-        //      addSequential(new Command2());
+        addSequential(new Grabfloorcanheight());
+        addSequential(new closegrabber());
+        addSequential(new Carycanheight());
         // these will run in order.
 
         // To run multiple commands at the same time,

@@ -19,8 +19,8 @@ public class CommandGroupa extends CommandGroup {
     
     public  CommandGroupa() {
         // Add Commands here:
-        // e.g. addSequential(new Command1());
-        //      addSequential(new Command2());
+        addSequential(new closegrabber());
+        addSequential(new Carytoteheight());
         // these will run in order.
 
         // To run multiple commands at the same time,
