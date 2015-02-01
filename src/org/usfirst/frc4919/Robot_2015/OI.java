@@ -66,6 +66,14 @@ public class OI {
 
 	    
         // SmartDashboard Buttons
+        SmartDashboard.putData("Command Group a", new CommandGroupa());
+
+        SmartDashboard.putData("Command Group b", new CommandGroupb());
+
+        SmartDashboard.putData("Command Group c", new CommandGroupc());
+
+        SmartDashboard.putData("Command Group d", new CommandGroupd());
+
         SmartDashboard.putData("Lift command", new Liftcommand());
 
         SmartDashboard.putData("automous", new automous());
@@ -74,9 +82,9 @@ public class OI {
 
         SmartDashboard.putData("open grabber", new opengrabber());
 
-        SmartDashboard.putData("close grabber", new closegrabber());
-
         SmartDashboard.putData("grab floor tote height", new grabfloortoteheight());
+
+        SmartDashboard.putData("close grabber", new closegrabber());
 
         SmartDashboard.putData("grab platform tote height", new grabplatformtoteheight());
 
