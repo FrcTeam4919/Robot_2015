@@ -14,6 +14,7 @@ package org.usfirst.frc4919.Robot_2015.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc4919.Robot_2015.Robot;
 
+//height at which we transport the can
 /**
  *
  */
