@@ -15,15 +15,13 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 /**
  *
  */
-public class CommandGroupd extends CommandGroup {
+public class CommandGroup3 extends CommandGroup {
     
-    public  CommandGroupd() {
+    public  CommandGroup3() {
         // Add Commands here:
-        addSequential(new Stackcanontopof4totesheightonfloor());
-        addSequential(new wait4seconds());
-        addSequential(new setdowncan());
-        addSequential(new opengrabber());
-        addSequential(new grabfloortoteheight());
+        addSequential(new Grabfloorcanheight());
+        addSequential(new closegrabber());
+        addSequential(new Carrycanheight());
         // these will run in order.
 
         // To run multiple commands at the same time,

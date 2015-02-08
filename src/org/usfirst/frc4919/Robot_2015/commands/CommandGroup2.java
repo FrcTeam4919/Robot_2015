@@ -15,16 +15,15 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 /**
  *
  */
-public class CommandGroupb extends CommandGroup {
+public class CommandGroup2 extends CommandGroup {
     
-    public  CommandGroupb() {
+    public  CommandGroup2() {
         // Add Commands here:
         addSequential(new Stacktoteheightonfloor());
         addSequential(new wait2seconds());
         addSequential(new Setdowntoteonfloorheight());
         addSequential(new opengrabber());
-        addSequential(new grabfloortoteheight());
-        
+        addSequential(new Grabfloortoteheight());
         // these will run in order.
 
         // To run multiple commands at the same time,

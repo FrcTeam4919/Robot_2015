@@ -15,12 +15,12 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 /**
  *
  */
-public class CommandGroupa extends CommandGroup {
+public class CommandGroup1 extends CommandGroup {
     
-    public  CommandGroupa() {
+    public  CommandGroup1() {
         // Add Commands here:
-        addSequential(new closegrabber());
-        addSequential(new Carytoteheight());
+       addSequential(new closegrabber());
+       addSequential(new Carytoteheight());
         // these will run in order.
 
         // To run multiple commands at the same time,
