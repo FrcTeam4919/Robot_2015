@@ -23,7 +23,7 @@ public class CommandGroup2 extends CommandGroup {
         addSequential(new wait2seconds());
         addSequential(new Setdowntoteonfloorheight());
         addSequential(new opengrabber());
-        addSequential(new Grabfloortoteheight());
+        addSequential(new grabfloortoteheight());
         // these will run in order.
 
         // To run multiple commands at the same time,

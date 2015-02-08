@@ -479,7 +479,7 @@ Children:
       Setpoint: !!robotbuilder.data.properties.DoubleProperty {default: 1, name: Setpoint,
         validators: null, value: 0.45094}
     Base: Setpoint Command
-    Name: Grab floor tote height
+    Name: grab floor tote height
   - Children: []
     Properties:
       Requires: !!robotbuilder.data.properties.ComponentSelectionProperty
@@ -493,7 +493,7 @@ Children:
       Setpoint: !!robotbuilder.data.properties.DoubleProperty {default: 1, name: Setpoint,
         validators: null, value: 0.55704}
     Base: Setpoint Command
-    Name: Grab platform tote height
+    Name: grab platform tote height
   - Children: []
     Properties:
       Requires: !!robotbuilder.data.properties.ComponentSelectionProperty

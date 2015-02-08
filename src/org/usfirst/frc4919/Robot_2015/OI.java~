@@ -90,9 +90,9 @@ public class OI {
 
         SmartDashboard.putData("Command Group 4", new CommandGroup4());
 
-        SmartDashboard.putData("Grab floor tote height", new Grabfloortoteheight());
+        SmartDashboard.putData("grab floor tote height", new grabfloortoteheight());
 
-        SmartDashboard.putData("Grab platform tote height", new Grabplatformtoteheight());
+        SmartDashboard.putData("grab platform tote height", new grabplatformtoteheight());
 
         SmartDashboard.putData("Grab step tote height", new Grabsteptoteheight());
 

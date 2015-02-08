@@ -21,9 +21,9 @@ public class CommandGroup4 extends CommandGroup {
         // Add Commands here:
         addSequential(new Stackcanontopof4totesheightonfloor());
         addSequential(new wait4seconds());
-        addSequential(new Setdowncan());
+        addSequential(new setdowncan());
         addSequential(new opengrabber());
-        addSequential(new Grabfloortoteheight());
+        addSequential(new grabfloortoteheight());
         // these will run in order.
 
         // To run multiple commands at the same time,
