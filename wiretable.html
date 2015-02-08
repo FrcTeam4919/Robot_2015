@@ -22,51 +22,55 @@
   </head>
   <body>
     <h1>Wiring</h1>
-                                <h2>PWMs</h2>
+                    <h2>DIO</h2>
+	    <table><tr>
+	        <th class="pound">#</th>
+	        <th>Sensor</th></tr>
+	                  	    <tr><td>0</td><td>auto sensors Ultrasonic 1</td></tr>
+	            	    <tr><td>1</td><td>auto sensors Ultrasonic 1</td></tr>
+	                                                                                                                                                                                                                                                                                                     	    </table>
+                        <h2>PWMs</h2>
 	    <table><tr>
 	        <th class="pound">#</th>
 	        <th>Motor</th></tr>
-	                                          	    <tr><td>2</td><td>Drive Train Front Right out put 2</td></tr>
-	            	    <tr><td>3</td><td>Drive Train front left  out put 3</td></tr>
-	            	    <tr><td>4</td><td>Drive Train back righ out put 4</td></tr>
+	                              	    <tr><td>1</td><td>Lift lift motor</td></tr>
+	            	    <tr><td>2</td><td>Drive Train Front Right output 2</td></tr>
+	            	    <tr><td>3</td><td>Drive Train front left  output 3</td></tr>
+	            	    <tr><td>4</td><td>Drive Train back righ output 4</td></tr>
 	            	    <tr><td>5</td><td>Drive Train back left output 5</td></tr>
 	                                                                                                                                                                                                                                                     	    </table>
     
-                <h2>CAN IDs</h2>
-	<table><tr>
-	<th class="pound">ID</th>
-	<th>Device</th></tr>
-	                                    	    <tr><td>2</td><td>Lift CAN Jaguar 1</td></tr>
-	            	    <tr><td>3</td><td>Lift CAN Jaguar 2</td></tr>
-	                                                                                                                                                                                                                                                                             	</table>
-        
+            
             
                     <h2>Analog Inputs</h2>
 	    <table><tr>
 	        <th class="pound">#</th>
 	        <th>Sensor</th></tr>
-	                  	    <tr><td>0</td><td>Lift Analog Input 1</td></tr>
+	                  	    <tr><td>0</td><td>Lift lift 10 turn pot</td></tr>
 	            	    <tr><td>1</td><td>Drive Train Gyro 1</td></tr>
-	                                                                                                                                                                                                                                                                                                     	    </table>
+	            	    <tr><td>2</td><td>Lift lift Potentiometer</td></tr>
+	                                                                                                                                                                                                                                                                                         	    </table>
         
                     <h2>PCM 0</h2>
 	    <table><tr>
 	        <th class="pound">#</th>
 	        <th>Solenoid</th></tr>
-	                                          	    <tr><td>2</td><td>grab Double Solenoid 2 Forward </td></tr>
-	            	    <tr><td>3</td><td>grab Double Solenoid 2 Reverse </td></tr>
-	            	    <tr><td>4</td><td>grab Double Solenoid 3 Forward </td></tr>
-	            	    <tr><td>5</td><td>grab Double Solenoid 3 Reverse </td></tr>
-	            	    <tr><td>6</td><td>grab Double Solenoid 4 Forward </td></tr>
-	            	    <tr><td>7</td><td>grab Double Solenoid 4 Reverse </td></tr>
-	                                                                                                                                                                                                                             	    </table>
+	                  	    <tr><td>0</td><td>grab Right Solenoid Forward </td></tr>
+	            	    <tr><td>1</td><td>grab Right Solenoid Reverse </td></tr>
+	                                                                                                                                                                                                                                                                                                     	    </table>
                         <h2>PCM 1</h2>
 	    <table><tr>
 	        <th class="pound">#</th>
 	        <th>Solenoid</th></tr>
-	                              	    <tr><td>1</td><td>grab Double Solenoid 1 Forward </td></tr>
-	            	    <tr><td>2</td><td>grab Double Solenoid 1 Reverse </td></tr>
-	                                                                                                                                                                                                                                                                                         	    </table>
+	                                          	    <tr><td>2</td><td>grab left Solenoid Forward </td></tr>
+	            	    <tr><td>3</td><td>grab left Solenoid Reverse </td></tr>
+	                                                                                                                                                                                                                                                                             	    </table>
                                                                                                                                                                                                                                         
-          </body>
+                <h2>Compressor</h2>
+	<table><tr>
+	<th class="pound">PCM</th>
+	<th>Device</th></tr>
+	            	    <tr><td>0</td><td>grab Compressor</td></tr>
+	                                                                                                                                                                                                                                                                                                                 	</table>
+      </body>
 </html>
