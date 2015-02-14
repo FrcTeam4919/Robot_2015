@@ -46,16 +46,16 @@ public class RobotMap {
         driveTrainGyro1 = new Gyro(1);
         LiveWindow.addSensor("Drive Train", "Gyro 1", driveTrainGyro1);
         driveTrainGyro1.setSensitivity(0.007);
-        driveTrainFrontRightoutput2 = new Talon(2);
+        driveTrainFrontRightoutput2 = new Talon(6);
         LiveWindow.addActuator("Drive Train", "Front Right output 2", (Talon) driveTrainFrontRightoutput2);
         
-        driveTrainfrontleftoutput3 = new Talon(3);
+        driveTrainfrontleftoutput3 = new Talon(7);
         LiveWindow.addActuator("Drive Train", "front left  output 3", (Talon) driveTrainfrontleftoutput3);
         
-        driveTrainbackrighoutput4 = new Talon(4);
+        driveTrainbackrighoutput4 = new Talon(8);
         LiveWindow.addActuator("Drive Train", "back righ output 4", (Talon) driveTrainbackrighoutput4);
         
-        driveTrainbackleftoutput5 = new Talon(5);
+        driveTrainbackleftoutput5 = new Talon(9);
         LiveWindow.addActuator("Drive Train", "back left output 5", (Talon) driveTrainbackleftoutput5);
         
         driveTrainRobotDrive41 = new RobotDrive(driveTrainfrontleftoutput3, driveTrainbackleftoutput5,

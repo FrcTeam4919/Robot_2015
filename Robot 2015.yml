@@ -31,7 +31,7 @@ Children:
             default: '0'
             name: Output Channel (PWM)
             validators: &id003 [PWMOutput]
-            value: '2'
+            value: '6'
         Base: Speed Controller
         Name: Front Right output 2
       - Children: []
@@ -47,7 +47,7 @@ Children:
             default: '0'
             name: Output Channel (PWM)
             validators: *id003
-            value: '3'
+            value: '7'
         Base: Speed Controller
         Name: front left  output 3
       - Children: []
@@ -63,7 +63,7 @@ Children:
             default: '0'
             name: Output Channel (PWM)
             validators: *id003
-            value: '4'
+            value: '8'
         Base: Speed Controller
         Name: back righ output 4
       - Children: []
@@ -79,7 +79,7 @@ Children:
             default: '0'
             name: Output Channel (PWM)
             validators: *id003
-            value: '5'
+            value: '9'
         Base: Speed Controller
         Name: back left output 5
       Properties:
@@ -707,7 +707,7 @@ Properties:
   Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Subsystems, validators: null, value: true}
   Wiring File: !!robotbuilder.data.properties.FileProperty {default: '', extension: html,
-    folder: false, name: Wiring File, validators: null, value: ..\wiretable.html}
+    folder: false, name: Wiring File, validators: null, value: ''}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
