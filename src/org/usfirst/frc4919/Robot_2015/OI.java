@@ -109,7 +109,7 @@ public class OI {
 
         SmartDashboard.putData("grab platform tote height", new grabplatformtoteheight());
 
-        SmartDashboard.putData("Grab step tote height", new Grabsteptoteheight());
+        SmartDashboard.putData("Grab step tote height", new grabsteptoteheight());
 
         SmartDashboard.putData("Cary tote height", new Carytoteheight());
 
@@ -135,7 +135,7 @@ public class OI {
 
         SmartDashboard.putData("Stack can on top of 4 totes height on floor", new Stackcanontopof4totesheightonfloor());
 
-        SmartDashboard.putData("Set down can", new Setdowncan());
+        SmartDashboard.putData("Set down can", new setdowncan());
 
         SmartDashboard.putData("reset command", new resetcommand());
 
