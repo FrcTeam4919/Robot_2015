@@ -49,7 +49,18 @@ public class DriveTrain extends Subsystem {
     
     public void joystickDrive (Joystick drivestick) {
  
-    	robotDrive41.mecanumDrive_Cartesian(drivestick.getX(), drivestick.getY(), drivestick.getTwist(), gyro1.getAngle());
+    	double twist;
+    	twist= drivestick.getTwist();
+    	
+    	if (twist >= -0.3)
+    	{
+  //  		twist = 0;
+  //  	}
+    	if (twist <= 0.3)
+    //	{
+    		twist = 0;
+    	}
+    	robotDrive41.mecanumDrive_Cartesian(drivestick.getX(), drivestick.getY(), twist, 0);
     	
     	
     }
