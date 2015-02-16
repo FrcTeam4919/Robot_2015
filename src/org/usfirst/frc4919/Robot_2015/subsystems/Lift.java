@@ -91,5 +91,8 @@ public class Lift extends PIDSubsystem {
     public void initializeCounterbottom() {
         counterbottom.reset();
     }
-}
+    public void keepcurrentheight() {
+        liftmotor.set(0.1); 
+    }
 
+}
