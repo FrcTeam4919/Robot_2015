@@ -34,6 +34,8 @@ public class RobotMap {
     public static Compressor grabCompressor;
     public static DoubleSolenoid grabRightSolenoid;
     public static DoubleSolenoid grableftSolenoid;
+    public static DigitalInput liftLimitSwitchbottom;
+    public static DigitalInput liftLimitSwitchtop;
     public static AnalogInput liftlift10turnpot;
     public static SpeedController liftliftmotor;
     public static Ultrasonic autosensorsUltrasonic1;
@@ -76,6 +78,12 @@ public class RobotMap {
         
         grableftSolenoid = new DoubleSolenoid(1, 2, 3);      
         LiveWindow.addActuator("grab", "left Solenoid", grableftSolenoid);
+        
+        liftLimitSwitchbottom = new DigitalInput(3);
+        LiveWindow.addSensor("Lift", "Limit Switch bottom", liftLimitSwitchbottom);
+        
+        liftLimitSwitchtop = new DigitalInput(2);
+        LiveWindow.addSensor("Lift", "Limit Switch top", liftLimitSwitchtop);
         
         liftlift10turnpot = new AnalogInput(0);
         LiveWindow.addSensor("Lift", "lift 10 turn pot", liftlift10turnpot);
