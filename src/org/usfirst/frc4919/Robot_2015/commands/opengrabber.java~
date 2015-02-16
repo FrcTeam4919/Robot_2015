@@ -45,7 +45,7 @@ public class  opengrabber extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.grab.stop();
+    	Robot.lift.keepcurrentheight();
     }
 
     // Called when another command which requires one or more of the same
