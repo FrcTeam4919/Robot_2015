@@ -19,8 +19,8 @@ public class resetcommand extends CommandGroup {
     
     public  resetcommand() {
         // Add Commands here:
-        // e.g. addSequential(new Command1());
-        //      addSequential(new Command2());
+       addSequential(new opengrabber());
+       addSequential(new grabfloortoteheight());
         // these will run in order.
 
         // To run multiple commands at the same time,
