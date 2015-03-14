@@ -31,8 +31,9 @@ public class  MovearmUP extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	setTimeout(0.9);
-    Robot.manuallift.liftup();
+    	Robot.manuallift.initializeCounter();
+    	
+    	Robot.manuallift.liftup();
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -41,7 +42,9 @@ public class  MovearmUP extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    	return isTimedOut();
+    	
+    	return Robot.manuallift.isSwitchSettop();
+    	
     }
 
     // Called once after isFinished returns true
