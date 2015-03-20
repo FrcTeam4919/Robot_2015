@@ -32,7 +32,8 @@ public class manuallift extends Subsystem {
     
     static double SPEEDCONSTANT = 0.3;
     static double STEADY = 0.1; 
-    
+    Counter countertop = new Counter(limitSwitchtop);
+    Counter counterbottom = new Counter(limitSwitchbottom);
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
@@ -45,7 +46,27 @@ public class manuallift extends Subsystem {
 	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    
+    
     }
+    
+    public boolean isSwitchSet()
+    {
+    	
+    	return ( countertop.get() > 0 || counterbottom.get() > 0);
+    
+    }
+    public boolean isSwitchSettop() {
+            
+    	return countertop.get() > 0;
+            
+    }
+    
+    public boolean isSwitchSetbottom() {
+        
+    	return counterbottom.get() > 0;
+    }
+    
     public void steady() {
     	liftmotor.set(STEADY);
     }
@@ -60,5 +81,12 @@ public class manuallift extends Subsystem {
     public void stop() {
     	liftmotor.set(0.0);
     }
+
+public void initializeCounter() {
+    countertop.reset();
+    counterbottom.reset();
 }
+
+}
+
 
