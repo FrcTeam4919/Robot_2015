@@ -408,7 +408,6 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
     Name: close grabber
-<<<<<<< HEAD
   - Children: []
     Properties:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
@@ -431,8 +430,6 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
     Name: autonomous
-=======
->>>>>>> 30cc189875f7725fab2bbd664d861dc4e3578543
   Properties: {}
   Base: Commands
   Name: Commands
