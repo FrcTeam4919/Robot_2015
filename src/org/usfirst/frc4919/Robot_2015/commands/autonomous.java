@@ -20,6 +20,7 @@ public class autonomous extends CommandGroup {
     public  autonomous() {
         // Add Commands here:
         addSequential(new closegrabber());
+        addSequential(new liftauto(.1,true));
         addSequential(new autodrive(.5,0,0,10));
         addSequential(new opengrabber());
         // these will run in order.
