@@ -21,6 +21,7 @@ public class autonomous extends CommandGroup {
         // Add Commands here:
         addSequential(new closegrabber());
         addSequential(new autodrive(.5,0,0,10));
+        addSequential(new opengrabber());
         // these will run in order.
 
         // To run multiple commands at the same time,
