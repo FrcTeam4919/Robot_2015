@@ -46,6 +46,9 @@ public class DriveTrain extends Subsystem {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
+    public void autodrive(double magnitude, double direction, double rotation){
+    	robotDrive41.mecanumDrive_Polar(magnitude, direction, rotation);
+    }
     
     
     public void joystickDrive (Joystick drivestick) {

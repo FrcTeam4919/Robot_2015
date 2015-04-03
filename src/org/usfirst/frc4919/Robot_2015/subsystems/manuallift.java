@@ -72,7 +72,7 @@ public class manuallift extends Subsystem {
     }
     public void liftup() {
     	liftmotor.set(SPEEDCONSTANT);
-    }
+    };
     
     public void liftdown() {
     	liftmotor.set(-0.1);
